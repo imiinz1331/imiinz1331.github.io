@@ -20,14 +20,14 @@ body {
 
 li {list-style:none;}
 img {height: auto;}
-a { text-decoration: none; color:#555; 
+a { text-decoration: none; color:rgb(0, 143, 210); 
 	-webkit-transition: 0.8s ease-in-out;
 	-moz-transition: 0.8s ease-in-out;
 	-o-transition: 0.8s ease-in-out;
 	transition: 0.8s ease-in-out;
 }
 a:visited { text-decoration:none color:#555; }
-a:hover { text-decoration:underline; color:#555;}
+a:hover { text-decoration:underline; color:rgb(226, 85, 50);}
 a img {
 	-webkit-transition: 0.5s ease-in-out;
 	-moz-transition: 0.5s ease-in-out;
