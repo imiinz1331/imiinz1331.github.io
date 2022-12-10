@@ -1,43 +1,26 @@
-//スライドショー//
+//pagetop//
 
-window.onload = function() {
+$(function() {
+	$(window).scroll(function () {
+		var ss = $(this).scrollTop();
+		var mm = 260;
+		if(ss > mm) {
+			$("#pagetoplink").animate({"opacity": "1"}, 10);
+		} else if(ss < mm) {
+			$("#pagetoplink").animate({"opacity": "0"}, 10);
+		}
+	});
+});
 
-    // スマホ スライド
 
-    if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+//scrollFade//
 
-        $(function(){
-        $.sublime_slideshow({
-                src:[
-                    {url:"images/image1.jpg"},
-                    {url:"images/image27.jpg"},
-                    {url:"images/image10.jpg"},
-                    {url:"images/image18.jpg"}
-                    ],
-            duration:   9,
-            fade:   1.5,
-            scaling:1.12,
-            rotating:   false,
-        });
-        });
-
-    } else { // PC スライド
-        $(function(){
-        $.sublime_slideshow({
-            src:[
-                {url:"images/image1.jpg"},
-                {url:"images/image27.jpg"},
-                {url:"images/image10.jpg"},
-                {url:"images/image18.jpg"}
-                ],
-            duration:   9,
-            fade:   1.5,
-            scaling:1.08,
-            rotating:   false,
-        });
-        });
-    }	
-}
+jQuery( function( $ ) {
+		$( 'h3' ).scrollFade();
+		$( '.main_content p' ).scrollFade();
+		$( '.related_link p' ).scrollFade();
+		$( '.scrollFade' ).scrollFade();
+	} );
 
 
 //ローディングここから//
@@ -64,25 +47,15 @@ $(function() {
 	var now_percent = 0;
 	var displaying_percent= 0;
 
-    // スマホ ローディング開始読み込み画像
-    if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-        preload([
-            'images/image1.jpg',
-            'images/image2.jpg'
-        ], function(total, loaded){
-            now_percent = Math.ceil(100 * loaded / total);
-        });
 
-    // PC ローディング開始読み込み画像
-    } else {
-        preload([
-            'images/image1.jpg',
-            'images/image2.jpg'
-        ], function(total, loaded){
-            now_percent = Math.ceil(100 * loaded / total);
-        });
+	preload([
+		'images/image1.jpg',
+		'images/image2.jpg'
+	], function(total, loaded){
+		now_percent = Math.ceil(100 * loaded / total);
+	});
 
-    }
+
 
 	var timer = window.setInterval(function() {
 		if (displaying_percent >= 100) {
@@ -94,13 +67,11 @@ $(function() {
 				}, 400 );
 				setTimeout( function() {
 					$('<img />')
-					$('.home .logo').animate({"opacity": "0.95"}, 1000);
-					$('.home .logo_mark img').animate({"opacity": "0.95"}, 1000);
-					$('.home_content').animate({"opacity": "0.95"}, 1000);
+					$('.sub_content').animate({"opacity": "1"}, 400);
 						setTimeout( function() {
 								$('#loader').fadeOut('slow');
-								$('#loader').animate({"opacity": "0"}, 2000);
-							}, 600 );
+								$('#loader').animate({"opacity": "0"}, 400);
+							}, 400 );
 					}, 1000 );
 		} else {
 			if (displaying_percent < now_percent) {
