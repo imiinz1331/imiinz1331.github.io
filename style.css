@@ -296,18 +296,6 @@ table {
 
 }
 
-.page-template-profile .sub_content .header {
-	background-image: url(images/image22.jpg);
-}
-
-.page-template-mylife .sub_content .header {
-	background-image: url(images/image23.jpg);
-}
-
-.page-template-products .sub_content .header {
-    background-image: url(images/prog1.jpg);
-}
-
 .content_area {
 	background: #efeceb;
 	z-index: 6;
@@ -447,24 +435,6 @@ table {
 	background-size: 300px auto;
 }
 
-
-.page-template-products .lead {
-	background-image: url(images/pc.png);
-}
-
-.page-template-products .letter_body {
-	background-image: url(images/pencil.png);
-}
-
-.page-template-profile .letter_body {
-	background-image: url(images/dandelion.png);
-}
-
-.page-template-mylife .letter_body {
-	background-image: url(images/eucalyptus.png);
-}
-
-
 /*関連リンク*/
 
 .related_link {
@@ -553,18 +523,6 @@ table {
 	width: 150px;
 	float: right;
 	margin-top: -8px;
-}
-
-.page-template-profile .footer {
-	background-image: url(images/image9.jpg);
-}
-
-.page-template-mylife .footer {
-	background-image: url(images/image18.jpg);
-}
-
-.page-template-products .footer {
-    background-image: url(images/keyboard.jpg);
 }
 
 /*ナビゲーション*/
@@ -782,18 +740,6 @@ body {
 	z-index: 1;
 	background-size: cover;
 	background-attachment: scroll;
-}
-
-.page-template-profile .sub_content .header {
-	background-image: url(images/image22.jpg);
-}
-
-.page-template-mylife .sub_content .header {
-	background-image: url(images/image23.jpg);
-}
-
-.page-template-products .sub_content .header {
-    background-image: url(images/hanabi1.jpg);
 }
 
 .sub_content p {
