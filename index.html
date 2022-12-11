@@ -4,84 +4,173 @@
     <meta charset="UTF-8">
     <title>Mizuki Iinuma</title>
     <meta name="description" content="my page">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
     <link rel="stylesheet" href="style.css">
-    <!-- <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script> -->
-    <!-- <script type="text/javascript" src="js/smoothScroll.js"></script> -->
-    <!-- <script type="text/javascript" src="js/jquery.scrollFade.js"></script> -->
-    <!-- <script type="text/javascript" src="js/jquery.sublimeSlideshow.js"></script> -->
+    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/smoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollFade.js"></script>
+    <script type="text/javascript" src="js/jquery.sublimeSlideshow.js"></script>
 </head>
 
 <body id="pagetop" class="page page-id-4 page-template page-template-profile page-template-profile-php">
-    <div class="home">
-        <div class="header">
-            <h1>Iinuma Mizuki</h1>
-            <div class="logo">
-                <h1>
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="iinuma mizuki">
-                    </a>
-                </h1>
-                <br><br>
-            </div>
+    <div class="header">
+        <!-- <h1> Mizuki Iinuma </h1> -->
+        <div class="logo">
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="iinuma mizuki">
+                </a>
+            </h1>
         </div>
-        <!--header-->
-
-        <div class="content_area">
-            <div class="lead">
-                <h2 class="">
-                    <span class="bask">About me</span>
-                </h2>
-                <h3>
-                    I am an undergraduate student in the Computer Science, 
-                    <a href="https://www.ocha.ac.jp/index.html">Ochanomizu University</a>,
-                    <a href="https://bekkilab.notion.site">Bekki lab</a>.
-                </h3>
+        <nav>
+            <div id="menu">
+                <ul class="navi bask weight400">
+                    <li class="navi_aboutMe">
+                        <a href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="navi_experience">
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li class="navi_publications">
+                        <a href="#publications">Publications</a>
+                    </li>
+                    <li class="navi_skills">
+                        <a href="#Skills">Skills</a>
+                    </li>
+                </ul>
             </div>
-            <!--lead-->
+        </nav>
+        <div class="icon">
+            <div id="Twitter">
+              <a href="https://twitter.com/miju142857">
+                <img src="images/Twitter.png">
+              </a>
+            </div>
+            <div id="GitHub">
+              <a href="https://github.com/imiinz1331">
+                <img src="images/Github.png">
+              </a>
+            </div>
+          </div>
+    </div>
+    <!--header-->
 
-            <div class="main_content">
-                <div class="letter_body scrollFade">
-                    <div class="letter_body_in">
-                        <h2 class="">
-                            <span class="bask">Personal History</span>
-                        </h2>
-                        <p>
-                            2019.04 Entered Department of Information Science, Faculty of Science, Ochanomizu University
+    <div class="content_area">
+        <div class="main_content" id="aboutMe">
+            <div class="letter_body scrollFade">
+                <div class="letter_body_in">
+                    <h1>
+                        <span class="bask">About me</span>
+                    </h1>
+                    <div class="flex">
+                        <figure class="image">
+                            <div class="icon">
+                                <img src="images/icon.png">
+                            </div>
+                        </figure>
+                        <h3 class="text">
+                            I am an undergraduate student in Information Science,
                             <br>
-                            2020.05 STEP2020 education program @ Google Japan
-                            <br>
-                            2021.02-03 3week internship program @ Cyber Agent
-                            <br>
-                            2022.05-07 Build@Mercari2022 @ Mercari
-                            <br>
-                            2022.08- Software Development Internship @ Advance Soft
-                        </p>
+                            at <a href="https://www.ocha.ac.jp/index.html">Ochanomizu University</a>,
+                            <a href="https://bekkilab.notion.site">Bekki lab</a>.
+                        </h3>
                     </div>
-                    <!--letter_body_in-->
+                    <h2> Field of Study</h2>
+                    <h3> Natural Language Processing, Type Theory </h3>
+                    <h2> Contact</h2>
+                    <h3> g1920504 [at] is.ocha.ac.jp </h3>
                 </div>
-                <!--letter_body-->
-
+                <!--letter_body_in-->
             </div>
-            <!--main_content-->
+            <!--letter_body-->
         </div>
-        <!--content_area-->
+        <!--main_content-->
 
-        <a href="#pagetop" id="pagetoplink" class="pagetop">
-            <img src="images/page-top.png" alt="Page top">
-        </a>
-
-        <div class="footer">
-            <div class="footer_in">
-                <p class="bask weight400">
-                    githubID: <a href="https://github.com/imiinz1331"> imiinz1331 </a>
-                    <br>
-                    Twitter : <a href="https://twitter.com/miju142857"> @miju142857 </a>
-                </p>
+        <div class="main_content2" id="experience">
+            <div class="letter_body scrollFade">
+                <div class="letter_body_in">
+                    <h1>
+                        <span class="bask">Experience</span>
+                    </h1>
+                    <ul>
+                        <li>2020.05</li>
+                        <h3>STEP2020 education program @ Google Japan</h3>
+                        <li>2020.08</li>
+                        <h3>HackU2020 vol.1</h3>
+                        <li>2020.11</li>
+                        <h3>JPhacks2020</h3>
+                        <li>2021.02-03</li>
+                        <h3>3week internship program @ Cyber Agent</h3>
+                        <li>2021.03</li>
+                        <h3>HackU2020 vol.5</h3>
+                        <li>2022.05-07</li>
+                        <h3>Build@Mercari2022 @ Mercari</h3>
+                        <li>2022.08-</li>
+                        <h3>Software Development Internship @ Advance Soft</h3>
+                    </ul>
+                </div>
+                <!--letter_body_in-->
             </div>
+            <!--letter_body-->
         </div>
+        <!--main_content2-->
+
+        <div class="main_content" id="publications">
+            <div class="letter_body scrollFade">
+                <div class="letter_body_in">
+                    <h1>
+                        <span class="bask">Publications</span>
+                    </h1>
+                    <ul>
+                        <h3>
+                            in preparation...
+                        </h3>
+                    </ul>
+                </div>
+                <!--letter_body_in-->
+            </div>
+            <!--letter_body-->
+        </div>
+        <!--main_content-->
+
+        <div class="main_content2" id="skills">
+            <div class="letter_body scrollFade">
+                <div class="letter_body_in">
+                    <h1>
+                        <span class="bask">Skills</span>
+                    </h1>
+                    <h2>Programming Language</h2>
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Haskell</li>
+                    </ul>
+                    <h2>Other Skill</h2>
+                    <ul>
+                        <li>AWS (DynamoDB, S3, Lambda)</li>
+                        <li>Office Software (PowerPoint, Word, Excel)</li>
+                        <li>Adobe Software (PhotoShop, Illustrator, PremierPro)</li>
+                    </ul>
+                </div>
+                <!--letter_body_in-->
+            </div>
+            <!--letter_body-->
+        </div>
+        <!--main_content2-->
+        <a class="pagetop" href="#"><div class="pagetop_arrow"></div></a>
 
     </div>
-    <!--sub_content-->
+    <!--content_area-->
+
+    <div class="footer">
+        <div class="footer_in">
+            <p class="bask weight400">
+                githubID: <a href="https://github.com/imiinz1331"> imiinz1331 </a>
+                <br>
+                Twitter : <a href="https://twitter.com/miju142857"> @miju142857 </a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
